@@ -15,21 +15,21 @@ data:extend(
     {
         type = "recipe",
         name = "convert-copper-to-iron",
-        icon = "__base__/graphics/icons/iron-plate.png"
+        icon = "__base__/graphics/icons/iron-plate.png",
         ingredients = {{"copper-plate",10},{"philosophers-stone",1}},
         result = {
             {type="item", name="iron-plate", amount=1},
-            {type="item", name="philosophers-stone", amount=1},
+            {type="item", name="philosophers-stone", amount=1}
         }
-  },
+    },
     {
         type = "recipe",
         name = "convert-iron-to-copper",
-        icon = "__base__/graphics/icons/copper-plate.png"
+        icon = "__base__/graphics/icons/copper-plate.png",
         ingredients = {{"iron-plate",1},{"philosophers-stone",1}},
         result = {
             {type="item", name="copper-plate", amount=10},
-            {type="item", name="philosophers-stone", amount=1},
+            {type="item", name="philosophers-stone", amount=1}
         }
   },
 }
