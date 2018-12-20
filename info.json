@@ -1,1 +1,11 @@
-
+{
+    "name": "Alchemio",
+    "version": "0.1.0",
+    "title": "Alchemy in Factorio",
+    "author": "AliaS and cAKeD",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.16"],
+    "description": "This mod adds in alchemy."
+}
