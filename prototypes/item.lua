@@ -1,17 +1,15 @@
-local philStone = table.deepcopy(data.raw.item["iron-stick"])
-
-philStone.name = "philosophers-stone"
-philStone.icons = {
-  {
-    icon = philStone.icon,
-    tint = {r=248,g=24,b=148,a=150}
-  },
+data:extend(
+{
+  {  
+    type = "item",
+    name = "philosphers-stone"
+    icon = "__base__/graphics/icons/stone.png",
+      tint={r=248,g=24,b=148,a=150},
+    icon_size = 32,
+    flags = {"goes-to-main-inventory"},
+    subgroup = "intermediate-product",
+    order = "b[philosophers-stone]",
+    stack_size = 10
+  }  
 }
-
-local recipe = table.deepcopy(data.raw.recipe["iron-stick"])
-recipe.enabled = true
-recipe.name = "Philosopher's Stone"
-recipe.ingredients = {{"sulfur",1},{"plastic-bar",1}}
-recipe.result = "philosophers-stone"
-
-data:extend{philStone,recipe}
+)
