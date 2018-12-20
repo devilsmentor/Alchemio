@@ -1,4 +1,4 @@
-local philStone = table.deepcopy(data.raw.demo-item["iron-stick"])
+local philStone = table.deepcopy(data.raw.item["iron-stick"])
 
 philStone.name = "philosophers-stone"
 philStone.icons = {
