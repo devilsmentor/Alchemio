@@ -17,7 +17,7 @@ data:extend(
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "storage",
-    order = "a[items]-b[cosmic-strongbox]",
+    order = "a[cosmic-strongbox]",
     place_result = "iron-chest",
     stack_size = 10
   },
