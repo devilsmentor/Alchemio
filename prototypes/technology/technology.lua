@@ -8,14 +8,6 @@
         {
           type = "unlock-recipe",
           recipe = "philosophers-stone"
-        },
-        {
-          type = "unlock-recipe",
-          recipe = "steel-chest"
-        },
-        {
-          type = "unlock-recipe",
-          recipe = "steel-axe"
         }
     },
     unit =
