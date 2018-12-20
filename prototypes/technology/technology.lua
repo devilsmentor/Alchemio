@@ -1,3 +1,4 @@
+data:extend(
 {
     type = "technology",
     name = "basic-alchemy",
@@ -36,3 +37,4 @@
         order = "d-d"
     }
 }
+)
