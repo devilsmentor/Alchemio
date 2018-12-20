@@ -16,7 +16,7 @@ data:extend(
         type = "recipe",
         name = "convert-copper-to-iron",
         icon = "__base__/graphics/icons/iron-plate.png",
-        icon-size=32,
+        icon_size=32,
         ingredients = {{"copper-plate",10},{"philosophers-stone",1}},
         results = {
             {type="item", name="iron-plate", amount=1},
@@ -27,7 +27,7 @@ data:extend(
         type = "recipe",
         name = "convert-iron-to-copper",
         icon = "__base__/graphics/icons/copper-plate.png",
-        icon-size=32,
+        icon_size=32,
         ingredients = {{"iron-plate",1},{"philosophers-stone",1}},
         results = {
             {type="item", name="copper-plate", amount=10},
