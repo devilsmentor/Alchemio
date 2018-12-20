@@ -28,10 +28,9 @@ data:extend(
     icon = "__base__/graphics/icons/iron-chest.png",
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
-    subgroup = "storage",
-    order = "a[items]-b[cosmic-strongbox]",
-    place_result = "iron-chest",
-    stack_size = 10
+    subgroup = "intermediate-product",
+    order = "b[emc]",
+    stack_size = 1000
   },
   {
     type = "tool",
