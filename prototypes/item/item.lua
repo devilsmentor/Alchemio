@@ -2,7 +2,7 @@ data:extend(
 {
   {  
     type = "item",
-    name = "philosphers-stone",
+    name = "philosophers-stone",
     icon = "__base__/graphics/icons/stone.png",
     tint={r=248, g=24, b=148, a=150},
     icon_size = 32,
