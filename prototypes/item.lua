@@ -1,7 +1,7 @@
-local phil = table.deepcopy(data.raw.demo-item["iron-stick"])
+local philStone = table.deepcopy(data.raw.demo-item["iron-stick"])
 
-phil.name = "Philosopher's Stone"
-phil.icons = {
+philStone.name = "Philosopher's Stone"
+philStone.icons = {
   {
     icon = phil.icon,
     tint = {r=248,g=24,b=148,a=150}
@@ -14,4 +14,4 @@ recipe.name = "Philosopher's Stone"
 recipe.ingredients = {{"sulfur",1},{"plastic-bar",1}}
 recipe.result = "Philosopher's Stone"
 
-data:extend{phil,recipe}
+data:extend{philStone,recipe}
