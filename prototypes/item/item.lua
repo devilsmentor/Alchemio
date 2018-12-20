@@ -25,15 +25,15 @@ data:extend(
   },
   {
     type = "tool",
-    name = "science-pack-alchemy",
+    name = "alchemy-science-pack",
     localised_description = {"item-description.science-pack"},
     icon = "__base__/graphics/icons/science-pack-1.png",
     tint={r=248, g=24, b=148, a=150},
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "science-pack",
-    order = "a[science-pack-alchemy]",
-    stack_size = 10,
+    order = "a[alchemy-science-pack]",
+    stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
