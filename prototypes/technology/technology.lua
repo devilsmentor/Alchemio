@@ -11,10 +11,10 @@ data:extend(
               type = "unlock-recipe",
               recipe = "philosophers-stone"
             },
-            {
-              type = "unlock-recipe",
-              recipe = "alchemy-science-pack"
-            },
+            --{
+            --  type = "unlock-recipe",
+            --  recipe = "alchemy-science-pack"
+            --},
             {
               type = "unlock-recipe",
               recipe = "convert-copper-to-iron"
