@@ -14,7 +14,7 @@ data:extend(
   {
     type = "item",
     name = "philosophers-strongbox",
-    icon = "__base__/graphics/icons/iron-chest.png"
+    icon = "__base__/graphics/icons/iron-chest.png",
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "storage",
