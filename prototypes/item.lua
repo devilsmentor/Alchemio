@@ -22,6 +22,6 @@ data:extend(
     place_result = "philosophers-strongbox",
     stack_size = 10
 
-  },
+  }
 }
 )
