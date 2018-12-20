@@ -1,36 +1,27 @@
---Philosopher's Stone
-local philStone = table.deepcopy(data.raw.item["iron-stick"])
-
-philStone.name = "philosophers-stone"
-philStone.icons = {
+data:extend(
+{
+  {  
+    type = "item",
+    name = "philosphers-stone",
+    icon = "__base__/graphics/icons/stone.png",
+      tint={r=248,g=24,b=148,a=150},
+    icon_size = 32,
+    flags = {"goes-to-main-inventory"},
+    subgroup = "intermediate-product",
+    order = "b[philosophers-stone]",
+    stack_size = 10
+  },
   {
-    icon = philStone.icon,
-    tint = {r=248,g=24,b=148,a=150}
+    type = "item",
+    name = "philosophers-strongbox",
+    icon = "__base__/graphics/icons/iron-chest.png"
+    icon_size = 32,
+    flags = {"goes-to-main-inventory"},
+    subgroup = "storage",
+    order = "a[items]-b[philosophers-strongbox]",
+    place_result = "philosophers-strongbox",
+    stack_size = 10
+
   },
 }
-
-local philStoneRecipe = table.deepcopy(data.raw.philStoneRecipe["iron-stick"])
-philStoneRecipe.enabled = true
-philStoneRecipe.name = "Philosopher's Stone"
-philStoneRecipe.ingredients = {{"sulfur",1},{"plastic-bar",1}}
-philStoneRecipe.result = "philosophers-stone"
-
-data:extend{philStone,philStoneRecipe}
-
---Philosopher's StrongBox
-local philStrongBox = table.deepcopy(data.raw.item["iron-chest"])
-
-philStrongBox.name = "philosophers-strongbox"
-philStrongBox.icons = {
-  {
-    icon = philStrongBox.icon,
-    tint = {r=248,g=24,b=148,a=150}
-  },  
-}
-local philBoxRecipe = table.deepcopy(data.raw.philBoxRecipe["iron-chest"])
-philBoxRecipe.enabled = true
-philBoxRecipe.name = "Philosopher's StrongBox"
-philBoxRecipe.ingredients = {{"sulfur",1},{"plastic-bar",1}}
-philBoxRecipe.result = "philosophers-strongbox"
-
-data:extend{philStone,philBoxRecipe}
+)
