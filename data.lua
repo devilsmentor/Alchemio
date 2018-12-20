@@ -1,2 +1,2 @@
 require("prototypes.item.item") 
-require("prototype.recipe.recipe")
+require("prototypes.recipe.recipe")
