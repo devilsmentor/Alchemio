@@ -3,18 +3,22 @@ data:extend(
     {
         type = "recipe",
         name = "philosophers-stone",
+        enabled = false,
+        category="advanced-crafting",
         ingredients = {{"sulfur",1},{"plastic-bar",1}},
         result = "philosophers-stone",
     },
     {
         type = "recipe",
         name = "alchemy-science-pack",
+        enabled = false,
         ingredients = {{"philosophers-stone",3},{"sulfur",2}},
         result = "alchemy-science-pack"
     },
     {
         type = "recipe",
         name = "convert-copper-to-iron",
+        enabled = false,
         icon = "__base__/graphics/icons/iron-plate.png",
         icon_size=32,
         ingredients = {{"copper-plate",10},{"philosophers-stone",1}},
@@ -27,6 +31,7 @@ data:extend(
     {
         type = "recipe",
         name = "convert-iron-to-copper",
+        enabled = false,
         icon = "__base__/graphics/icons/copper-plate.png",
         icon_size=32,
         ingredients = {{"iron-plate",1},{"philosophers-stone",1}},
