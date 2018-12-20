@@ -1,3 +1,5 @@
+--https://wiki.factorio.com/Prototype/CraftingMachine#crafting_categories
+
 data:extend(
 {
    {
