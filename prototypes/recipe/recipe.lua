@@ -21,7 +21,8 @@ data:extend(
         results = {
             {type="item", name="iron-plate", amount=1},
             {type="item", name="philosophers-stone", amount=1}
-        }
+        },
+        subgroup="intermediate-product"
     },
     {
         type = "recipe",
@@ -32,7 +33,8 @@ data:extend(
         results = {
             {type="item", name="copper-plate", amount=10},
             {type="item", name="philosophers-stone", amount=1}
-        }
+        },
+        subgroup="intermediate-product"
   },
 }
 )
