@@ -8,8 +8,9 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "science-pack-alchemy",
+    name = "alchemy-science-pack",
     ingredients = {{"sulfur",1},{"plastic-bar",1}},
+    result = "alchemy-science-pack"
   }
 }
 )
