@@ -35,7 +35,7 @@ data:extend(
     type = "tool",
     name = "alchemy-science-pack",
     localised_description = {"item-description.science-pack"},
-    icon = "__Alchemio__/graphics/icons/science-pack-1.png",
+    icon = "__Alchemio__/graphics/icons/alchemy-science-pack.png",
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "science-pack",
