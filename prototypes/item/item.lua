@@ -3,7 +3,7 @@ data:extend(
   {  
     type = "item",
     name = "philosophers-stone",
-    icon = "__base__/graphics/icons/stone.png",
+    icon = "graphics/philosophers-stone.png",
     tint={r=248, g=24, b=148, a=150},
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
@@ -13,13 +13,23 @@ data:extend(
   },
   {
     type = "item",
-    name = "philosophers-strongbox",
+    name = "cosmic-strongbox",
     icon = "__base__/graphics/icons/iron-chest.png",
-    tint={r=248, g=24, b=148, a=150},
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "storage",
-    order = "a[items]-b[philosophers-strongbox]",
+    order = "a[items]-b[cosmic-strongbox]",
+    place_result = "iron-chest",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "emc",
+    icon = "__base__/graphics/icons/iron-chest.png",
+    icon_size = 32,
+    flags = {"goes-to-main-inventory"},
+    subgroup = "storage",
+    order = "a[items]-b[cosmic-strongbox]",
     place_result = "iron-chest",
     stack_size = 10
   },
