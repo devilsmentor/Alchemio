@@ -19,7 +19,7 @@ script.on_event({defines.events.on_tick},
                 for item_name, amount_found in pairs(dict_items) do --assuming pairs will give string name then int count
                     if (exchange_rates[item_name]~=nil) then --if item has value...
                         inv.remove({name=item_name,count=amount_found}) --remove that item
-                        inv.add({name="emc",count=amount_found*exchange_rates[item_name]}) --replace it with the proper number of EMC
+                        inv.insert({name="emc",count=amount_found*exchange_rates[item_name]}) --replace it with the proper number of EMC
                             
                         --Note: with this method, we cannot have fractions of emc, which might be bad or good, but it probably won't matter in the long run. 
                             
