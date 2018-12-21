@@ -6,7 +6,7 @@ data:extend(
       --Based this loosely off of Oil Refinery
       type = "assembling-machine",
       name = "transmutation-station",
-      icon = "", --Need icon here
+      icon = "__base__\graphics\entity\oil-refinery\oil-refinery.png", --Need icon here
       icon_size = 32,
       flags = {"placeable-neutral", "placeable-player", "player-creation"},
       minable = {hardness = 0.2, mining_time = 0.5, result = "assembling-machine-2"},
