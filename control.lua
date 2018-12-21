@@ -12,5 +12,6 @@ script.on_event({defines.events.on_tick},
         for index, entity in pairs(game.get_entity_by_tag("cosmic-strongbox")) do
             print("Entity found!")
         end
+        print(game.get_entity_by_tag("cosmic-strongbox"))
     end
 )
