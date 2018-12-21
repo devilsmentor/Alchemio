@@ -24,7 +24,7 @@ data:extend(
   {
     type = "item",
     name = "emc",
-    icon = "__base__/graphics/icons/iron-chest.png",
+    icon = "__Alchemio__/graphics/emc.png",
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
