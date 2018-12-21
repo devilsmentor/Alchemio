@@ -10,8 +10,8 @@ script.on_event({defines.events.on_tick},
         --if LuaForce.get_entity_count("cosmic-strongbox") == 0 then return false end --back out early if there are no strongboxes to update
         if game.get_entity_by_tag("cosmic-strongbox")==nil then return false end
         for index, entity in pairs(game.get_entity_by_tag("cosmic-strongbox")) do
-            print("Entity found!")
+            error("Entity found!")
         end
-        print(game.get_entity_by_tag("cosmic-strongbox"))
+        error(game.get_entity_by_tag("cosmic-strongbox"))
     end
 )
