@@ -18,8 +18,8 @@ data:extend(
     flags = {"goes-to-main-inventory"},
     subgroup = "storage",
     order = "a[cosmic-strongbox]", --This might be fucked, I'll read up on it to see what's going on
-    place_result = "iron-chest",
-    stack_size = 10
+    place_result = "cosmic-strongbox", --place result refers to the entity created when this object is used, so in this case, when you click, a cosmic chest is made
+    stack_size = 100
   },
   {
     type = "item",
@@ -29,7 +29,7 @@ data:extend(
     flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "b[emc]",
-    stack_size = 1000
+    stack_size = 5000
   },
   {
     type = "tool",
