@@ -4,11 +4,11 @@ data:extend(
 {
     {
         type = "container",
-        name = "cosmic-strongbox",
-        icon = "__base__/graphics/icons/iron-chest.png",
+        name = "cosmic-condenser",
+        icon = "__Alchemio__/graphics/cosmic-condenser.png",
         icon_size = 32,
         flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 1, result = "cosmic-strongbox"},
+        minable = {mining_time = 1, result = "cosmic-condenser"},
         max_health = 350,
         corpse = "small-remnants",
         open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
