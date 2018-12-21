@@ -7,7 +7,7 @@ https://wiki.factorio.com/Tutorial:Modding_FAQ#How_do_I_store_information_with_a
 
 script.on_event({defines.events.on_tick},
     function (e)
-        local exchange_rates = {["iron-plate"] = 10, ["copper"] = 1} --todo: store in a .json and read on load, then balance the json accordingly
+        local exchange_rates = {["iron-plate"] = 1, ["copper-plate"] = 10} --todo: store in a .json and read on load, then balance the json accordingly
 
         for chunk in game.surfaces[1].get_chunks() do --For each chunk in the game, this might be slow. Look for other methods of getting entities in an array
             local entities = game.surfaces[1].find_entities_filtered{name="cosmic-strongbox", area={{chunk.x*32, chunk.y*32}, {(chunk.x+1)*32, (chunk.y+1)*32}}} 
