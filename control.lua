@@ -13,7 +13,7 @@ script.on_event({defines.events.on_tick},
             local entities = game.surfaces[1].find_entities_filtered{name="cosmic-strongbox", area={{chunk.x*32, chunk.y*32}, {(chunk.x+1)*32, (chunk.y+1)*32}}} 
             for _, entity in pairs(entities) do
 
-                local inv = entity.get_inventory()
+                local inv = entity.get_inventory(defines.inventory.chest)
                 local dict_items = inv.get_contents()
                     
                 for item_name, amount_found in pairs(dict_items) do --assuming pairs will give string name then int count
