@@ -13,7 +13,7 @@ data:extend(
   {
     type = "item",
     name = "cosmic-strongbox",
-    icon = "__base__/graphics/icons/iron-chest.png",
+    icon = "__Alchemio__/graphics/cosmic-condenser.png",
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "storage",
