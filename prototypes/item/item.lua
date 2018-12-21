@@ -12,13 +12,13 @@ data:extend(
   },
   {
     type = "item",
-    name = "cosmic-strongbox",
+    name = "cosmic-condenser",
     icon = "__Alchemio__/graphics/cosmic-condenser.png",
     icon_size = 32,
     flags = {"goes-to-main-inventory"},
     subgroup = "storage",
-    order = "a[cosmic-strongbox]", --This might be fucked, I'll read up on it to see what's going on
-    place_result = "cosmic-strongbox", --place result refers to the entity created when this object is used, so in this case, when you click, a cosmic chest is made
+    order = "a[cosmic-condenser]", --This might be fucked, I'll read up on it to see what's going on
+    place_result = "cosmic-condenser", --place result refers to the entity created when this object is used, so in this case, when you click, a cosmic chest is made
     stack_size = 100
   },
   {
