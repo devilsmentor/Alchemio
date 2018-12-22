@@ -44,6 +44,17 @@ data:extend(
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type="item",
+    name="transmutation-station",
+    icon = "__Alchemio__/graphics/chemical-plant.png",
+    icon_size = 32,
+    flags = {"goes-to-main-inventory"},
+    subgroup = "production-machine",
+    order = "b[transmutation-station]",
+    place_result = "transmutation_station",
+    stack_size = 50
   }
 }
 )
