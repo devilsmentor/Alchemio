@@ -35,7 +35,7 @@ data:extend(
           priority = "extra-high",
           width = 48,
           height = 34,
-          shift = {0.1875, 0}
+          shift = {0, 0}
         },
         circuit_wire_connection_point = circuit_connector_definitions["chest"].points,
         circuit_connector_sprites = circuit_connector_definitions["chest"].sprites,
