@@ -53,7 +53,7 @@ data:extend(
     flags = {"goes-to-main-inventory"},
     subgroup = "production-machine",
     order = "b[transmutation-station]",
-    place_result = "transmutation_station",
+    place_result = "transmutation-station",
     stack_size = 50
   }
 }
