@@ -25,14 +25,21 @@ local exchange_rates = {
     ["oil"]                     = 16
     
 }
-if global["condensers"]==nil then --initialize condensers if it doesnt exist yet
-    
-    global["condensers"] = {}
-    global["condenser_count"] = 0
 
-end
-local condensers = global["condensers"]
-local condenser_count = global["condenser_count"]
+script.on_init( --initialize global variables
+    function ()
+    
+    global.condensers = {}
+    global.condenser_count = 0
+        
+    local condensers = global.condensers
+    local condenser_count = global.condenser_count
+        
+    end
+)
+
+
+    
 
 ----
 
