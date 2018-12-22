@@ -29,14 +29,11 @@ local exchange_rates = {
 script.on_init( --initialize global variables
     function ()
     
-    global.condensers = {}
-    global.condenser_count = 0
+        global.condensers = {}
+        global.condenser_count = 0
         
     end
 )
-
-
-    
 
 ----
 
@@ -106,7 +103,7 @@ script.on_event({defines.events.on_tick},
             
             if inv.get_item_count() ~= inv.get_item_count("emc") then --Don't iterate through if all the items are emc anyway!
             
-            local items = inv.get_contents() --Converts the inventory to a dictionary. This dict is in format {name, count}. 
+                local items = inv.get_contents() --Converts the inventory to a dictionary. This dict is in format {name, count}. 
             
                 for item_name, amount in pairs(items) do --Iterate through each item
                     if (exchange_rates[item_name]~=nil) then --If item has value...
