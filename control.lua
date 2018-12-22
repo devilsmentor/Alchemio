@@ -25,8 +25,14 @@ local exchange_rates = {
     ["oil"]                     = 16
     
 }
-local condensers = {}
-local condenser_count = 0
+if global.condensers==nil then
+    
+    local global.condensers = {}
+    local global.condenser_count = 0
+
+end
+local condensers = global.condensers
+local cocondenser_count = global.condenser_count
 
 ----
 
