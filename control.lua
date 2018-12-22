@@ -89,9 +89,10 @@ script.on_event({defines.events.on_tick},
         for _, condenser in pairs(condensers) do
             
             local inv = condenser.get_inventory(defines.inventory.chest) --Pulls the chest's inventory. We can modify this variable and the game will reflect whatever changes are made. 
-            local items = inv.get_contents() --Converts the inventory to a dictionary. This dict is in format {name, count}. 
             
-            if items.get_item_count() ~= items.get_item_count("emc") then --Don't iterate through if all the items are emc anyway!
+            if inv.get_item_count() ~= inv.get_item_count("emc") then --Don't iterate through if all the items are emc anyway!
+            
+            local items = inv.get_contents() --Converts the inventory to a dictionary. This dict is in format {name, count}. 
             
                 for item_name, amount in pairs(items) do --Iterate through each item
                     if (exchange_rates[item_name]~=nil) then --If item has value...
