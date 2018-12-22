@@ -5,8 +5,15 @@ data:extend(
         name = "philosophers-stone",
         enabled = true,
         category="advanced-crafting",
-        ingredients = {{"sulfur",1},{"plastic-bar",1}},
+        ingredients = {{"sulfur",1},{"stone",1}},
         result = "philosophers-stone",
+    },
+    {
+        type = "recipe",
+        name = "cosmic-condenser",
+        enabled = true,
+        ingredients = {{"philosophers-stone",1},{"steel-chest",1}},
+        result = "cosmic-condenser",
     },
     {
         type = "recipe",
