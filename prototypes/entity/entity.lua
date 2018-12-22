@@ -31,7 +31,7 @@ data:extend(
         vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
         picture =
         {
-          filename = "__base__/graphics/entity/iron-chest/iron-chest.png",
+          filename = "__Alchemio__/graphics/cosmic-condenser.png",
           priority = "extra-high",
           width = 48,
           height = 34,
