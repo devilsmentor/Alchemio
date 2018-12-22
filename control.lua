@@ -5,7 +5,7 @@ https://lua-api.factorio.com/latest/LuaGameScript.html#LuaGameScript.get_entity_
 https://wiki.factorio.com/Tutorial:Modding_FAQ#How_do_I_store_information_with_an_entity.2C_like_integers_or_booleans.3F
 ]]--
 
-local exchange_rates = {["iron-plate"] = 1, ["copper-plate"] = 10} --todo: store in a .json and read on load, then balance the json accordingly
+local exchange_rates = {["iron-plate"] = 10, ["copper-plate"] = 1} --todo: store in a .json and read on load, then balance the json accordingly
 local condensers = {}
 local condenser_count = 0
 
