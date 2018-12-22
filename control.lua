@@ -85,10 +85,12 @@ script.on_event({defines.events.on_tick},
             local inv = condenser.get_inventory(defines.inventory.chest) --Pulls the chest's inventory. We can modify this variable and the game will reflect whatever changes are made. 
             local items = inv.get_contents() --Converts the inventory to a dictionary. This dict is in format {name, count}. 
             
-            for item_name, amount in pairs(items) do --iterate through each item
-                if (exchange_rates[item_name]~=nil) then --if item has value...
-                    inv.remove({name=item_name,count=amount}) --remove that item
-                    inv.insert({name="emc",count=amount*exchange_rates[item_name]}) --replace it with the proper number of EMC
+            if items.get_item_count() == items.get_item_count("emc") then return end --Don't iterate through if all the items are emc anyway!
+            
+            for item_name, amount in pairs(items) do --Iterate through each item
+                if (exchange_rates[item_name]~=nil) then --If item has value...
+                    inv.remove({name=item_name,count=amount}) --Remove that item
+                    inv.insert({name="emc",count=amount*exchange_rates[item_name]}) --Replace it with the proper number of EMC
                 end
             end
             --todo: add electricity need?
