@@ -33,8 +33,8 @@ data:extend(
         {
           filename = "__Alchemio__/graphics/cosmic-condenser.png",
           priority = "extra-high",
-          width = 48,
-          height = 34,
+          width = 32,
+          height = 32,
           shift = {0, 0}
         },
         circuit_wire_connection_point = circuit_connector_definitions["chest"].points,
