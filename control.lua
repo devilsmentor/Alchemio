@@ -27,8 +27,8 @@ local exchange_rates = {
 }
 if global["condensers"]==nil then --initialize condensers if it doesnt exist yet
     
-    local global["condensers"] = {}
-    local global["condenser_count"] = 0
+    global["condensers"] = {}
+    global["condenser_count"] = 0
 
 end
 local condensers = global["condensers"]
