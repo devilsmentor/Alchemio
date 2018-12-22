@@ -34,9 +34,9 @@ script.on_event({defines.events.on_robot_built_entity},
         
 ----
 
-function cosmicCondenserDestroyed(condenser_to_remove)
+function cosmicCondenserDestroyed(condenser)
     
-    table.remove(condenser) --apparently, this might cause slowdowns, so this needs testing
+    table.remove(condensers, condenser) --apparently, this might cause slowdowns, so this needs testing
     condenser_count = condenser_count-1
 end
 
