@@ -38,12 +38,10 @@ script.on_init( --initialize global variables
 ----
 
 function cosmicCondenserCreated(condenser)
-        
-    --local condensers = global.condensers
-    --local condenser_count = global.condenser_count
     
     global.condensers[global.condenser_count+1] = condenser
     global.condenser_count = global.condenser_count+1
+    
 end
 
 script.on_event({defines.events.on_built_entity}, 
@@ -65,12 +63,10 @@ script.on_event({defines.events.on_robot_built_entity},
 ----
 
 function cosmicCondenserDestroyed(condenser)
-        
-    --local condensers = global.condensers
-    --local condenser_count = global.condenser_count
     
     table.remove(global.condensers, condenser) --apparently, this might cause slowdowns, so this needs testing
     global.condenser_count = global.condenser_count-1
+    
 end
 
 script.on_event({defines.events.on_player_mined_entity}, 
@@ -91,9 +87,6 @@ script.on_event({defines.events.on_robot_mined_entity},
 
 script.on_event({defines.events.on_tick}, 
     function (e)
-        
-        --local condensers = global.condensers
-        --local condenser_count = global.condenser_count
         
         if global.condenser_count == 0 then return true end --No need to continue if there are no condensers
         
