@@ -39,11 +39,11 @@ script.on_init( --initialize global variables
 
 function cosmicCondenserCreated(condenser)
         
-    local condensers = global.condensers
-    local condenser_count = global.condenser_count
+    --local condensers = global.condensers
+    --local condenser_count = global.condenser_count
     
-    condensers[condenser_count+1] = condenser
-    condenser_count = condenser_count+1
+    global.condensers[global.condenser_count+1] = condenser
+    global.condenser_count = global.condenser_count+1
 end
 
 script.on_event({defines.events.on_built_entity}, 
@@ -66,11 +66,11 @@ script.on_event({defines.events.on_robot_built_entity},
 
 function cosmicCondenserDestroyed(condenser)
         
-    local condensers = global.condensers
-    local condenser_count = global.condenser_count
+    --local condensers = global.condensers
+    --local condenser_count = global.condenser_count
     
-    table.remove(condensers, condenser) --apparently, this might cause slowdowns, so this needs testing
-    condenser_count = condenser_count-1
+    table.remove(global.condensers, condenser) --apparently, this might cause slowdowns, so this needs testing
+    global.condenser_count = global.condenser_count-1
 end
 
 script.on_event({defines.events.on_player_mined_entity}, 
@@ -92,12 +92,12 @@ script.on_event({defines.events.on_robot_mined_entity},
 script.on_event({defines.events.on_tick}, 
     function (e)
         
-        local condensers = global.condensers
-        local condenser_count = global.condenser_count
+        --local condensers = global.condensers
+        --local condenser_count = global.condenser_count
         
-        if condenser_count == 0 then return true end --No need to continue if there are no condensers
+        if global.condenser_count == 0 then return true end --No need to continue if there are no condensers
         
-        for _, condenser in pairs(condensers) do
+        for _, condenser in pairs(global.condensers) do
             
             local inv = condenser.get_inventory(defines.inventory.chest) --Pulls the chest's inventory. We can modify this variable and the game will reflect whatever changes are made. 
             
