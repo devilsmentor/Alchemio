@@ -12,6 +12,17 @@ data:extend(
   },
   {
     type = "item",
+    name = "transmutation-table",
+    icon = "__base__/graphics/icons/assembling-machine-3.png",
+    icon_size = 32,
+    flags = {},
+    subgroup = "storage",
+    order = "a[transmutation-table]",
+    place_result = "transmutation-table",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "cosmic-condenser",
     icon = "__Alchemio__/graphics/cosmic-condenser.png",
     icon_size = 32,
@@ -22,7 +33,7 @@ data:extend(
     stack_size = 100
   },
   {
-    type = "item",
+    type = "item", --later we might wanna make emc a fluid and the condenser outputs to a pump or something. For now emc is an item so its easier to move around. 
     name = "emc",
     icon = "__Alchemio__/graphics/emc.png",
     icon_size = 32,
