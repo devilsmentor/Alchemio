@@ -39,8 +39,8 @@ script.on_init( --initialize global variables
 
 function cosmicCondenserCreated(condenser)
     
-    global.condensers[global.condenser_count+1] = condenser
-    global.condenser_count = global.condenser_count+1
+    global.condensers[global.condenser_count+1] = condenser --add the condenser to the condenser list
+    global.condenser_count = global.condenser_count+1 --increment the count of condensers by 1
     
 end
 
@@ -64,8 +64,13 @@ script.on_event({defines.events.on_robot_built_entity},
 
 function cosmicCondenserDestroyed(condenser)
     
-    table.remove(global.condensers, condenser) --apparently, this might cause slowdowns, so this needs testing
-    global.condenser_count = global.condenser_count-1
+    for index, test_condenser in pairs(global.condensers) do --check each condenser in the global table
+        if test_condenser == condenser then --if the test condenser IS the condenser we wanna delete...
+            table.remove(global.condensers, index) --...get rid of it...
+            break --...and dont bother with the rest
+        end
+    end
+    global.condenser_count = global.condenser_count-1 --and then lower the condenser count by one
     
 end
 
